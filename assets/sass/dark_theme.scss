@@ -1,0 +1,131 @@
+.dark_theme{
+    background-color: $body_night_color;
+    //header dark theme
+    header{
+        .header{
+            background-image: linear-gradient(270deg, $night_color1 0%, $night_color2 100%);
+            box-shadow: 0 1px 0 0 $border_color;
+        }
+        .container{
+            div{
+                .color_button{
+                    background: $night_color1;
+                    border: 1px solid $border_color;
+                    box-shadow: inset -1px -1px 0 0 $night_color3, inset 1px 1px 0 0 $night_color_text;
+                    color:$night_color_text;
+                }
+    
+                a{
+                    color: $night_color_text;
+                }
+            }
+        }
+
+
+    
+        .container{
+            nav{
+                background: $night_color4;
+                box-shadow: inset -2px -2px 0 0 $night_color4, inset 2px 2px 0 0 $night_color_text;   
+                h2{
+                    background-image: linear-gradient(270deg, $night_color1 0%, $night_color2 100%);
+                    color:  $night_color_text;
+                }
+                .container{
+                    button{
+                        background: $night_color4;
+                        border: 1px solid #808080;
+                        box-shadow: inset -1px -1px 0 0 $night_color4, inset 1px 1px 0 0 #FFFFFF;
+                        color:$night_color5;
+                    }
+                }
+                //corregir colores para dark
+                .search_nav{
+                    background: #B4B4B4;
+                    box-shadow: inset -2px -2px 0 0 $night_color5, inset 2px 2px 0 0 $night_color_text;
+                button{
+                    background: $night_color6; 
+                }
+                #search_suggested{
+                    padding: 1px;
+                    div{
+                        display: flex;
+                        align-items: flex-start;
+                        border: 1px dotted #110038;
+                        height: 33px;
+                        padding: 6px 0px 0px 15px; 
+                    }
+                }
+                }
+            }
+        }
+    
+    }
+    //section1 dark theme
+    .section_1{
+        margin-bottom: 64px;
+        .title{
+            width: 1200px;
+            height: 36px;
+            background: #FFFAFE;
+            border: 1px solid #E6BBE2;
+            box-shadow: inset -2px -2px 0 0 #E6DCE4, inset 2px 2px 0 0 #80687D;
+            padding: 7px;
+            margin-bottom: 16px;
+            h2{
+                font-size: 14px;
+                color: #110038;
+                letter-spacing: 0;
+            }
+        }
+    
+        .container_gifs{
+            margin-left: 15px;
+            .container_gif{
+                width: 288px;
+                height: 313px;
+                margin-right: 16px;
+                background: #E6E6E6;
+                box-shadow: inset -2px -2px 0 0 #B4B4B4, inset 2px 2px 0 0 #FFFFFF;
+                .header{
+                    background-image: linear-gradient(270deg, #F7C9F3 0%, #4180F6 100%);
+                    margin: 3px 4px 2px 4px;
+                    height: 24px;
+                    width: 280px;
+                    h2{
+                        font-size: 14px;
+                        color: #FFFFFF;
+                        margin: 3px 20px 3px 2px;
+                    }
+                    button{
+                        margin: 5px 4px;
+                        width: 16px;
+                        height: 14px;
+                        background: transparent;
+                        border: none;
+                    }
+                }
+                .body{
+                    width: 280px;
+                    height: 280px;
+                    background-color: white;
+                    margin: 0px 4px 4px 4px;
+                    display: flex;
+                    align-items: flex-end;
+                    button{
+                        width: 81px;
+                        height: 34px;
+
+                        background: #4180F6;
+                        border: 1px solid #4C2F99;
+                        box-shadow: inset -2px -2px 0 0 #284F99, inset 2px 2px 0 0 #FFFFFF;
+          
+                    }
+                }
+            }
+        }
+    }
+    
+
+}
+

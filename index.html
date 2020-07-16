@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/css/styles.css">
+    <title>Document</title>
+</head>
+
+<body class="container body">
+    <!--header-->
+    <header class="container">
+        <!--"nav2"-->
+        <div class="col-12 header color_header">
+            <p>
+                ¡Bienvenidos/as a Guifos.com! ——————Donde los gifs están.////// Número de visitas: 12.765.803
+            </p>
+        </div>
+        <div class="container col-12 head">
+            <a href="index.html" class="col-6 logo">
+                <img src="/assets/img/gifOF_logo.png" alt="imagen_logo" id="logo_img">
+            </a>
+            <div class="button_container col-4">
+                <button class="color_button button1">Crear Guifos</button>
+                <button class="color_button button2 theme">Elegir tema</button>
+                <button class="color_button button3 b3"><img src="/assets/img/dropdown.svg" alt="img_dropdown"></button>
+                <a href="">Mis Guifos</a>
+                <!--nav_theme-->
+                <div id="themes" class="nav_theme">
+                    <button class="button_1 SailorDay">Sailor Day</button>
+                    <button class="button_2 SailorNight">Sailor Night</button>
+                </div>
+            </div>
+        </div>
+        <!--search-->
+        <div class="container col-12 section_search">
+            <nav class="container col-10 background_nav">
+                <div class="col-12">
+                    <h2 class="color_header">Buscar</h2>
+                </div>
+                <div class="container col-12">
+                    <input class="col-2" type="text" id="value_search">
+                    <button class="col-1" id="button_search">
+                        <img src="/assets/img/lupa_light.svg" alt="img_lupa">
+                        Buscar</button>
+                </div>
+                <div id="background_nav2" class="col-12 search_nav background_nav">
+                    <button class="col-11" id="search_suggested">
+                        <div id="suggestedResult" class="col-12">
+                            ejemplo
+                        </div>
+                    </button>
+                    <button class="col-11" id="search_similar">resultado de búsqueda</button>
+                    <button class="col-11" id="search_others">otro más</button>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <!--section_1-->
+    <section class="container section_1 col-12">
+        <!--title-->
+        <div class="col-10 title">
+            <h2>Hoy te sugerimos:</h2>
+        </div>
+        <!--contauner_gifs-->
+        <div class="col-12 container container_gifs">
+            <!--container_gif-->
+
+        </div>
+    </section>
+    <!--crear gifos-->
+    <section class=" container col-12 container_createGif">
+        <div class="col-6 body">
+            <h4 class="col-12 header">
+                Crear Guifos
+            </h4>
+            <div class="container col-12 body-create">
+                <div class="title col-12">
+                    <img src="/assets/img/window img.png" alt="">
+                    <h4>
+                        Aquí podrás crear tus propios guifos
+                    </h4>
+                </div>
+                <div class="instruction">
+                    <p>
+                        Crear tu <b><I>guifo</I></b> es muy fácil, graba cualquier imagen con tu cámara y obtén guifos
+                        personalizados. Los pasos para crear tu guifo son: <br>
+                        <b>1)</b> Dar permisos de acceso a la cámara (sólo por el tiempo de uso)<br>
+                        <b>2)</b> Capturar tu momento guifo<br>
+                        <b>3)</b> Revisar el momento<br>
+                        <b>4)</b> Listo para subir y compartir!<br>
+                        ¿Quieres comenzar a crear tu <b><I>guifo</I></b> ahora?
+                    </p>
+                </div>
+                <div class="button col-12">
+                    <button id="start">
+                        Comenzar
+                    </button>
+                    <button id="cancel">
+                        Cancelar
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--section_2-->
+    <section id="section2" class="container section_2">
+        <!--title-->
+        <div class="col-10 title">
+            <h2>
+                Tendencias:
+            </h2>
+        </div>
+        <!--container_gifs-->
+        <div class="col-12 container container_gifs container_gifs2">
+            <!--container_gif-->
+            <div class="col-3 container container_gif">
+                <div class="container body">
+                    <img id="containerGifRandom" src="" alt="">
+                    <div class="col-12 header">
+                        <h2 id="titleRandom">
+                            #
+                        </h2>
+                    </div>
+                </div>
+            </div>
+            <!--container_gif_1-->
+        </div>
+    </section>
+    <!--seccion de gif buscar-->
+    <section id="section3" class="container section_2">
+        <!--title-->
+        <div class="col-10 title">
+            <h2 class="title_buscar">
+            </h2>
+        </div>
+        <!--container_gifs-->
+        <div id="containerGif3" class="col-12 container container_gifs container_gifs2">
+            <!--container_gif-->
+            <div class="col-3 container container_gif">
+                <div class="container body">
+                    <img id="containerGifRandom" src="" alt="">
+                    <div class="col-12 header">
+                        <h2 id="titleRandom">
+                            #
+                        </h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--video-->
+    <section class=" container col-12 container_video">
+        <div class="body col-7">
+            <div class="container col-12 header">
+                <h2>
+                    Un Chequeo Antes de Empezar
+                </h2>
+                <a href="index.html">
+                    <img src="./assets/img/close.svg" alt="boton_cerrar">
+                </a>
+            </div>
+            <div class="body_video col-12">
+                <video class="col-12" id="videoGif" src=""></video>
+            </div>
+            <div class="body_capture col-12">
+                <button class="button_capture">
+                    <div class="button_img">
+                        <img src="/assets/img/camera.svg" alt="">
+                    </div>
+                    <h5>
+                        Captura
+                    </h5>
+                </button>
+            </div>
+        </div>
+    </section>
+    <!--script-->
+    <!--libreria  recordRTC-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/RecordRTC/5.5.8/RecordRTC.js" type="text/javascript"></script>
+    <!--------------------------------------------->
+    <script src="/assets/scripts/main.js"></script>
+    <script src="/assets/scripts/search.js"></script>
+    <script src="/assets/scripts/today_suggest.js"></script>
+    <script src="/assets/scripts/themes.js"></script>
+    <script src="/assets/scripts/trends.js"></script>
+    <script src="/assets/scripts/video.js"></script>
+</body>

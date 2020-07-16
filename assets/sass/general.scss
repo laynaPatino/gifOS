@@ -1,0 +1,35 @@
+*{
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Chakra Petch', sans-serif;
+}
+
+
+
+//colors
+
+body{
+    background-color: $body_day_color;
+}
+
+.color_header{
+    background-image: linear-gradient(270deg,  $day_color1 0%,  $day_color2 100%);
+}
+
+.color_button{
+    background: $day_color1;
+    border: 1px solid $border_color;
+    box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 $day_color3;
+    font-size: 18px;
+    color: $day_color_text;
+    font-size: 16px;
+}
+
+.background_nav{
+    background: #E6E6E6;
+    box-shadow: inset -2px -2px 0 0  $day_color4, inset 2px 2px 0 0 $day_color3;
+}
+
+
+
