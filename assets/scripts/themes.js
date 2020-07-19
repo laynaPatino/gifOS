@@ -1,4 +1,28 @@
 
+//despliegue menu temas
+var status_them = document.querySelector(".nav_theme").style.display="none"
+function theme(){
+    var status_them = document.querySelector(".nav_theme").style.display
+    if (status_them == "none"){
+        document.querySelector(".nav_theme").style.display = "block";   
+    } else{
+        document.querySelector(".nav_theme").style.display = "none";     
+    };
+}
+
+//cambio de tema
+function changeTheam(){
+    document.querySelector(".theme")
+    .addEventListener("click",function(){
+        theme();
+    });
+    
+    document.querySelector(".b3")
+    .addEventListener("click",function(){
+        theme();
+    });
+}
+
 function themes(){
     document.querySelector(".SailorNight")
     .addEventListener("click",function(){
@@ -14,4 +38,7 @@ function themes(){
     });  
 };
 
+
+//llamado de funcion
+changeTheam();
 themes();

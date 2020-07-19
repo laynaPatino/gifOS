@@ -1,6 +1,3 @@
-//Funciones para evento buscar gif
-var estado = document.querySelector(".search_nav").style.display = "none"//estado inicial de menu buscar
-document.querySelector("#section3").style.display = "none"//estado inicial de seccion3
 
 // trae elementos de api 
 function getSearchResults(search) {

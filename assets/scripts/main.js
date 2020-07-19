@@ -1,32 +1,15 @@
 const url = "http://api.giphy.com/v1/gifs/"
 const apiKey = "r57WusYChcBWf2rW0XB14SeuLz7qNeJG";
+//Funciones para evento buscar gif
+var estado = document.querySelector(".search_nav").style.display = "none"//estado inicial de menu buscar
+document.querySelector("#section3").style.display = "none"//estado inicial de seccion3
+//funciones para "Hoy te sugerimos"
+const gifSuggest = url + "trending?api_key=" + apiKey + "&limit=4&rating=g";
+const containerGifs = document.querySelector(".container_gifs");
+let offset = 100;
 
-//despliegue menu temas
-var status_them = document.querySelector(".nav_theme").style.display="none"
-function theme(){
-    var status_them = document.querySelector(".nav_theme").style.display
-    if (status_them == "none"){
-        document.querySelector(".nav_theme").style.display = "block";   
-    } else{
-        document.querySelector(".nav_theme").style.display = "none";     
-    };
-}
 
-//cambio de tema
-function changeTheam(){
-    document.querySelector(".theme")
-    .addEventListener("click",function(){
-        theme();
-    });
-    
-    document.querySelector(".b3")
-    .addEventListener("click",function(){
-        theme();
-    });
-}
 
-//llamado de funcion
-changeTheam();
 
 
 

@@ -1,7 +1,4 @@
-//funciones para "Hoy te sugerimos"
-const gifSuggest = url + "trending?api_key=" + apiKey + "&limit=4&rating=g";
-const containerGifs = document.querySelector(".container_gifs");
-let offset = 100;
+
 
 //estructura de div para Gif
 function Suggest(img, title, i) {
@@ -13,11 +10,8 @@ function Suggest(img, title, i) {
         <!--container_gif-->
         <div id="${i}">
             <div class="container header">
-                <h2  class="titulito"> 
-                #
-                </h2>
-                <h2  class="col-9 titulito"> 
-                ${title}
+                <h2  class="col-10 titulito"> 
+                #${title}
                 </h2>
                 <button onclick = "closeGif(${i})">
                     <img src="./assets/img/close.svg" alt="boton_cerrar">
@@ -68,9 +62,9 @@ function seeMore(i) {
     console.log(elemento)
     let elemento2 = elemento[1].childNodes;
     console.log(elemento2)
-    let elemento3 = elemento2[3];
+    let elemento3 = elemento2[1];
     console.log(elemento3)
-    let titleSearchGif = elemento3.innerHTML;
+    let titleSearchGif = elemento3.innerHTML.replace("#", "");
     console.log(titleSearchGif)
     displayGif(titleSearchGif);
     getSearchResults(titleSearchGif);
