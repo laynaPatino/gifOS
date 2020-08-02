@@ -59,3 +59,4 @@ function random(img, title) {
 
 //llamado de funcion
 gifTrend();
+

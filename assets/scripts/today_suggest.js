@@ -1,5 +1,4 @@
 
-
 //estructura de div para Gif
 function Suggest(img, title, i) {
     const containerGif = document.createElement("div");
