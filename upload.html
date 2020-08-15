@@ -53,7 +53,7 @@
                         Comenzar
                     </button>
                     <button id="cancel">
-                        Cancelar
+                        <a href="index.html">Cancelar</a>
                     </button>
                 </div>
             </div>
@@ -70,8 +70,25 @@
                     <img src="./assets/img/close.svg" alt="boton_cerrar">
                 </a>
             </div>
+            <div class="load-gif">
+                <div class="col-12 container load-gif-container">
+                    <div class="col-12 img-load" style="text-align: center;">
+                        <img src="/assets/img/globe_img.png" alt="">
+                    </div>
+                    <h4 class="col-12" style="text-align: center;">
+                        Estamos subiendo tu guifo…
+                    </h4>
+                    <div class="col-12 progress-div">
+                        <progress  id="file" value="0" max="100" ></progress> 
+                    </div> 
+                    <p class="col-12" style="text-align: center; margin-top: 8px;">
+                        Tiempo restante: <span>38 años</span>algunos minutos
+                    </p>
+                </div>
+            </div>
             <div class="body_video col-12">
                 <video class="col-12" id="videoGif" src=""></video>
+                <img src="" alt="" id="videoGif2" class="col-12">
             </div>
             <div class="body_capture col-12">
                 <button class="button_capture">
@@ -93,9 +110,17 @@
                 <button class="upload_gif">
                     Subir Guifo
                 </button>
-                <button class="replay_gif">
-                    Repetir Captura
+                <button class="load-cancel">
+                    Cancelar
                 </button>
+                <button class="replay_gif">
+                    <a href="upload.html"> Repetir Captura</a>
+                </button>
+                <!--timer-->
+                <div class="timer-input col-10">
+                    <h3 class="timer-text">
+                    </h3>
+                </div>
             </div>
         </div>
     </section>
@@ -110,7 +135,7 @@
         <!--container_gifs-->
         <div id="misGifcontainer" class="col-12 container container_gifs container_gifs2">
             <!--container_gif-->
-    
+
         </div>
     </section>
     <!--script-->

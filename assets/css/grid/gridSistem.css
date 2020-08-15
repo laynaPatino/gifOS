@@ -1,0 +1,35 @@
+/*gridSistem*/
+.container {
+  width: 100%;
+  justify-content: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap; }
+  .container .col {
+    width: 8.33%; }
+  .container .col-1 {
+    width: 8.33%; }
+  .container .col-2 {
+    width: 16.66%; }
+  .container .col-3 {
+    width: 24.99%; }
+  .container .col-4 {
+    width: 33.32%; }
+  .container .col-5 {
+    width: 41.65%; }
+  .container .col-6 {
+    width: 49.98%; }
+  .container .col-7 {
+    width: 58.31%; }
+  .container .col-8 {
+    width: 66.65%; }
+  .container .col-9 {
+    width: 74.97%; }
+  .container .col-10 {
+    width: 83.3%; }
+  .container .col-11 {
+    width: 91.63%; }
+  .container .col-12 {
+    width: 100%; }
+
+/*# sourceMappingURL=gridSistem.css.map */

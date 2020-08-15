@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    <link rel="stylesheet" href="test.css">
+</head>
+<body>
+    <div class="progress-div">
+        <progress  id="file" value="0" max="100" ></progress> 
+    </div> 
+
+    <div>
+        <h3 class="timer-text">
+
+        </h3>
+    </div>
+
+    <button onclick="timer()">
+        click
+    </button>
+    <button onclick="stop()">
+        stop
+    </button>
+
+    <script>
+        var num = 0;
+        function move() {
+        if (num == 0) {
+            num = 1;
+            var elem = document.getElementById("file");
+            var width = 0;
+            var id = setInterval(frame, 25);
+            function frame() {
+            if (width >= 100) {
+                clearInterval(id);
+                i = 0;
+            } else {
+                width++;
+                elem.value = width;
+            }
+            }
+        }
+        }
+        move()
+
+        //timer
+
+        var Time;
+        function timer() {    
+    DivTimer = document.querySelector('.timer-size');
+
+    Time = setInterval(TimeElapsed, 1000);
+    var hour = 0
+    var min = 0;
+    var Seconds = 1;
+    function TimeElapsed() {            
+        
+        if(Seconds == 60){
+            Seconds = 0
+            min = min + 1
+        }
+
+        if(min == 60){
+            hour = hour +1
+        }
+        
+        if(Seconds < 10){
+            Seconds = '0' + Seconds                
+        }            
+
+        TimerText = document.querySelector('.timer-text');
+        TimerText.innerHTML = hour+":"+min+":"+Seconds        
+        Seconds++;
+    }     
+}
+function stop(){
+    clearInterval(Time)
+}
+
+
+    </script>
+</body>
+</html>
