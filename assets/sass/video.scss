@@ -1,6 +1,5 @@
 .container_video {
   margin-bottom: 268px;
-
   .body {
     background: #e6e6e6;
     padding: 3px;
@@ -9,7 +8,7 @@
       background-image: linear-gradient(270deg, #f7c9f3 0%, #4180f6 100%);
       h2 {
         width: 97%;
-        font-family: ChakraPetch-Bold;
+        font-family: 'Chakra Petch', sans-serif;
         font-size: 14px;
         color: #ffffff;
         letter-spacing: 0;
@@ -26,7 +25,6 @@
             margin-top: 14%;
             .img-load{
                 margin-bottom: 8px;
-               // margin-top: 6vw;
             }
             h4{
                 font-family: ChakraPetch-Bold;
@@ -100,7 +98,13 @@
         background: #ff6161;
         color: #ffffff;
       }
+
+      .upload_gif{
+        background: #F7C9F3;
+      }
+
       button {
+        font-size: 16px;
         position: relative;
         width: 180px;
         height: 36px;
@@ -131,6 +135,7 @@
       .replay_gif {
         a {
           text-decoration: none;
+          font-size: 16px;
         }
       }
       .timer-input {
@@ -150,6 +155,7 @@
 }
 
 .container_createGif {
+  font-family: 'Chakra Petch', sans-serif;
   margin-bottom: 153px;
   .body {
     padding: 3px;
@@ -193,6 +199,7 @@
         padding-right: 36px;
         display: flex;
         flex-direction: row-reverse;
+      
         button {
           width: 144px;
           height: 36px;
@@ -210,6 +217,7 @@
           a {
             text-decoration: none;
             color: #110038;
+            font-size: 16px;
           }
         }
         #start {

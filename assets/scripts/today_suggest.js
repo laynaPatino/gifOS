@@ -19,7 +19,9 @@ function Suggest(img, title, i) {
             <div class="body">
                 <img src="${img}" alt="${title}">
                 <button class="col-1" onclick = "seeMore(${i})">
-                    ver mas ...
+                    <div>
+                        ver mas ...
+                    </div>
                 </button>
             </div>
         </div>

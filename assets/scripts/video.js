@@ -18,8 +18,17 @@ const bodyVideo = document.querySelector(".body_video");
 const loadCancel = document.querySelector(".load-cancel");
 loadCancel.style.display="none";
 const timerInput = document.querySelector(".timer-input");
+timerInput.style.display="none";
+const successfulLoad = document.querySelector(".successful_load");
+const lastGif = document.querySelector("#last-gif");
+const sectionCreateGif = document.getElementById("sectionCreateGif");
+sectionCreateGif.style.display="none"
+const titleBox = document.querySelector(".title-box");
 
 
+//successfulLoad.style.display="none"
+
+console.log(localStorage.getItem("id"))
 //getUserMedia que usar del navegador e este caso audio no, video si
 function getStreamAndRecord() {
   navigator.mediaDevices
@@ -41,9 +50,11 @@ function getStreamAndRecord() {
       document
         .querySelector(".button_capture")
         .addEventListener("click", function () {
+          titleBox.textContent="Capturando Tu Guifo";
           recorder.startRecording();
           document.querySelector(".button_capture").style.display = "none";
           document.querySelector(".button_stop").style.display = "block";
+          timerInput.style.display="block";
           timer();
         });
       //stop gif
@@ -60,6 +71,7 @@ function getStreamAndRecord() {
           console.log((video2.src = objectURL));
           video.style.display = "none";
           video2.style.display = "block";
+          titleBox.textContent="Vista Previa"
           stop();
         });
 
@@ -67,6 +79,7 @@ function getStreamAndRecord() {
       document
         .querySelector(".upload_gif")
         .addEventListener("click", function () {
+          titleBox.textContent="Subiendo Guifo"
             bodyVideo.style.display = "none";
             loadGif.style.display = "flex";
             loadCancel.style.display="block";
@@ -83,11 +96,22 @@ function getStreamAndRecord() {
           })
             .then((resp) => resp.json())
             .then((data) => {
+              console.log(data.meta.status)
               if (data.error) {
                 alert(data.errors);
               } else {
                 localStorageGif(data);
               }
+              if(data.meta.status == 200){
+                sectionCreateGif.style.display="flex";
+                containerVideo.style.display = "none";
+                document.querySelector("#section3").style.display = "flex";
+                document.querySelector(".title_my_gifos").style.display = "flex";
+              }
+              let idGif = JSON.parse(localStorage.getItem("id"));
+              let id = idGif[idGif.length-1];
+              let urlGif = "https://media.giphy.com/media/" + id + "/giphy.gif";
+              lastGif.src = urlGif;
             });
         });
 
@@ -101,7 +125,23 @@ function getStreamAndRecord() {
           video2.style.display = "none";
           video.style.display = "block";
         });
-
+        //download gif
+        document.querySelector(".download-button").addEventListener("click", function(){
+            let blob = recorder.getBlob();
+            invokeSaveAsDialog(blob);
+        });
+        document.querySelector(".download-link").addEventListener("click", function(){
+                let idGif = JSON.parse(localStorage.getItem("id"));
+                let id = idGif[idGif.length - 1];
+                let urlGif = "https://media.giphy.com/media/" + id + "/giphy.gif";
+                console.log(urlGif );
+                var aux = document.createElement('input');
+                aux.setAttribute('value', urlGif );
+                document.body.appendChild(aux);
+                aux.select();
+                document.execCommand('copy');
+                document.body.removeChild(aux);
+        });
       // local storage
       function localStorageGif(data) {
         if (localStorage.getItem("id") === null) {
@@ -205,3 +245,7 @@ function move() {
 //llamado a funcion
 createGif();
 sectionMisGifos();
+
+/* if (elem.value == 100) {
+        successfulLoad.style.display="flex"    
+    }*/

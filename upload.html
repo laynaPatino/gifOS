@@ -20,6 +20,7 @@
         </div>
         <div class="container col-12 head">
             <a href="index.html" class="col-10 logo">
+                <img src="./assets/img/arrow.svg" alt="arrow_svg" id="arrow">
                 <img src="./assets/img/gifOF_logo.png" alt="imagen_logo" id="logo_img">
             </a>
         </div>
@@ -53,7 +54,9 @@
                         Comenzar
                     </button>
                     <button id="cancel">
-                        <a href="index.html">Cancelar</a>
+                        <div>
+                            <a href="index.html">Cancelar</a>
+                        </div>
                     </button>
                 </div>
             </div>
@@ -63,7 +66,7 @@
     <section class=" container col-12 container_video">
         <div class="body col-7">
             <div class="container col-12 header">
-                <h2>
+                <h2 class="title-box">
                     Un Chequeo Antes de Empezar
                 </h2>
                 <a href="upload.html">
@@ -108,10 +111,14 @@
                     </h5>
                 </button>
                 <button class="upload_gif">
-                    Subir Guifo
+                    <div>
+                        Subir Guifo
+                    </div>
                 </button>
                 <button class="load-cancel">
-                    Cancelar
+                    <div>
+                        Cancelar
+                    </div>
                 </button>
                 <button class="replay_gif">
                     <a href="upload.html"> Repetir Captura</a>
@@ -124,10 +131,49 @@
             </div>
         </div>
     </section>
+    <!--successful load-->
+    <section id="sectionCreateGif" class=" container col-12 container_createGif successful_load">
+        <div class="col-6 body">
+            <div class="container col-12 header">
+                <h4 class="col-11">
+                    Guifo Subido Con Éxito
+                </h4>
+                <a href="upload.html">
+                    <img src="./assets/img/close.svg" alt="boton_cerrar">
+                </a>
+            </div>
+            <div class="container col-12 body-create">
+                <div class="col-7">
+                    <div class="img_container" >
+                        <img id="last-gif" src="" alt="">
+                    </div>
+                    </div>
+                <div class="col-5 container-info">
+                    <h4>
+                        Guifo creado con éxito
+                    </h4>
+                    <div class="container-button">
+                        <button class="download-link">
+                            Copiar Enlace Guifo
+                        </button>
+                        <button class="download-button">
+                            Descargar Guifo
+                        </button>
+                    </div>
+                    <div class="ready-button">
+                        <button>
+                            <a href="index.html"> Listo</a>
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
     <!--Mis Gifos-->
     <section id="section3" class="container section_2">
         <!--title-->
-        <div class="col-10 title">
+        <div class="col-10 title title_my_gifos">
             <h2 class="title_buscar">
                 Mis gifos
             </h2>

@@ -20,10 +20,16 @@ function sectionSearchResults(img, title) {
     const sectionGifs = document.querySelector("#containerGif3");
     const templateSectiongif =
         `
-            <!--container_gifs-->
-            <div class="container_gif_1 col-3 ">
-                <img src="${img}" alt="${title}">
+        <div class="container container_gif col-3 ">
+        <div class="container body">
+            <img id="containerGifRandom" src="${img}" alt="${title}">
+            <div class="col-12 header">
+                <h2 id="titleRandom">
+                    #${title}
+                </h2>
             </div>
+        </div>
+    </div>
 
     `
     sectionGif.innerHTML = templateSectiongif;
@@ -44,6 +50,9 @@ function search() {
     document.getElementById("button_search")
         .addEventListener("click", function () {
             normalNav()
+            document.querySelector("#lupa").src = "./assets/img/lupa.svg";
+            document.getElementById("button_search").style.background="#F7C9F3";
+            document.getElementById("button_search").style.color="#110038";
             let searchButton = document.getElementById("value_search");
             if (searchButton.value == "") {
                 alert("Tienes que ingresar algo que buscar")
@@ -64,6 +73,7 @@ function search() {
 
     //evento boton busqueda sugerida
     suggestedResult.addEventListener("click", function () {
+        document.querySelector(".button_search_div").style.border="1px dotted #110038"
         deletSearch();
         let suggested = suggestedResult.innerHTML;
         displayGif(suggested)
@@ -119,6 +129,9 @@ function search() {
     }
 
 };
+
+
+
 
 
 

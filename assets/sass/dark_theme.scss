@@ -65,33 +65,16 @@
     .section_1{
         margin-bottom: 64px;
         .title{
-            width: 1200px;
-            height: 36px;
             background: #FFFAFE;
-            border: 1px solid #E6BBE2;
-            box-shadow: inset -2px -2px 0 0 #E6DCE4, inset 2px 2px 0 0 #80687D;
-            padding: 7px;
-            margin-bottom: 16px;
-            h2{
-                font-size: 14px;
-                color: #110038;
-                letter-spacing: 0;
-            }
+            border: 1px solid #2E32FB;
+            box-shadow: inset -2px -2px 0 0 #E6DCE4, inset 2px 2px 0 0 #110038;
         }
-    
         .container_gifs{
-            margin-left: 15px;
             .container_gif{
-                width: 288px;
-                height: 313px;
-                margin-right: 16px;
-                background: #E6E6E6;
-                box-shadow: inset -2px -2px 0 0 #B4B4B4, inset 2px 2px 0 0 #FFFFFF;
+                background: #B4B4B4;
+                box-shadow: inset -2px -2px 0 0 #5C5C5C, inset 2px 2px 0 0 #FFFFFF;
                 .header{
-                    background-image: linear-gradient(270deg, #F7C9F3 0%, #4180F6 100%);
-                    margin: 3px 4px 2px 4px;
-                    height: 24px;
-                    width: 280px;
+                    background-image: linear-gradient(270deg, #EE3EFE 0%, #2E32FB 100%);
                     h2{
                         font-size: 14px;
                         color: #FFFFFF;
@@ -113,18 +96,54 @@
                     display: flex;
                     align-items: flex-end;
                     button{
-                        width: 81px;
-                        height: 34px;
-
-                        background: #4180F6;
+                        background: #2E32FB;
                         border: 1px solid #4C2F99;
-                        box-shadow: inset -2px -2px 0 0 #284F99, inset 2px 2px 0 0 #FFFFFF;
+                        box-shadow: inset -2px -2px 0 0 #2124B3, inset 2px 2px 0 0 #FFFFFF;
           
                     }
                 }
             }
         }
     }
+
+    .section_2{
+        .title{
+            background: #FFFAFE;
+            border: 1px solid #2E32FB;
+            box-shadow: inset -2px -2px 0 0 #E6DCE4, inset 2px 2px 0 0 #110038;
+        }
+        .container_gifs{
+            .container_gif:hover{
+                background: #B4B4B4;
+                box-shadow: inset -2px -2px 0 0 #5C5C5C, inset 2px 2px 0 0 #FFFFFF;
+                .body{
+                    .header{
+                        background-image: linear-gradient(270deg, #EE3EFE 0%, #2E32FB 100%);
+                        h2{
+                            font-size: 14px;
+                            color: #FFFFFF;
+                        }
+                    }
+                }
+            }
+            .container_gif_2:hover{
+                background: #B4B4B4;
+                box-shadow: inset -2px -2px 0 0 #5C5C5C, inset 2px 2px 0 0 #FFFFFF;
+                .body{
+                    .header{
+                        background-image: linear-gradient(270deg, #EE3EFE 0%, #2E32FB 100%);
+                        h2{
+                            font-size: 14px;
+                            color: #FFFFFF;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+    
+    
     
 
 }

@@ -15,9 +15,7 @@ function gifTrend() {
                 i = index;
                 let img = value.images['original']['url'];
                 let title = value.title;
-                if (i == 0) {
-                    random(img, title);
-                } if (i >= 1 && i <= 3 || i >= 5 && i <= 8) {
+                if (i >= 0 && i <= 3 || i >= 5 && i <= 8) {
                     trend(img, title);
                 }  if (i == 4 || i == 9) {
                     trend2(img, title);
@@ -32,8 +30,15 @@ function gifTrend() {
 function trend(img, title) {
     const newGif = document.createElement("div");
     const templateSection2 = `
-    <div class="container_gif_1 col-3 ">
-        <img src="${img}" alt="${title}">
+    <div class="container container_gif col-3 ">
+        <div class="container body">
+            <img id="containerGifRandom" src="${img}" alt="${title}">
+            <div class="col-12 header">
+                <h2 id="titleRandom">
+                    #${title}
+                </h2>
+            </div>
+        </div>
     </div>
     `
     newGif.innerHTML = templateSection2;
@@ -43,19 +48,39 @@ function trend(img, title) {
 function trend2(img, title) {
     const newGif = document.createElement("div");
     const templateSection2 = `
-    <div class="container_gif_2 col-6 ">
-        <img src="${img}" alt="${title}">
+    <div class="container container_gif_2 col-6 ">
+        <div class="container body">
+            <img id="containerGifRandom" src="${img}" alt="${title}">
+            <div class="col-12 header">
+                <h2 id="titleRandom">
+                    #${title}
+                </h2>
+            </div>
+        </div>
     </div>
     `
     newGif.innerHTML = templateSection2;
     containerGifs2.appendChild(newGif);
 }
 
-function random(img, title) {
+/*function random(img, title) {
     document.getElementById("containerGifRandom").src = img
     document.getElementById("containerGifRandom").alt = title
     document.getElementById("titleRandom").innerHTML = "#" + title
-}
+
+
+    <div class="col-3 container container_gif">
+                <div class="container body">
+                    <img id="containerGifRandom" src="" alt="">
+                    <div class="col-12 header">
+                        <h2 id="titleRandom">
+                            #
+                        </h2>
+                    </div>
+                </div>
+            </div>
+
+}*/
 
 //llamado de funcion
 gifTrend();

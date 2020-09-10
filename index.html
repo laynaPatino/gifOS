@@ -23,11 +23,24 @@
                 <img src="./assets/img/gifOF_logo.png" alt="imagen_logo" id="logo_img">
             </a>
             <div class="button_container col-4">
-                <button class="color_button button1"><a href="upload.html">Crear Guifos</a></button>
-                <button class="color_button button2 theme">Elegir tema</button>
-                <button class="color_button button3 b3"><img src="./assets/img/dropdown.svg"
-                        alt="img_dropdown"></button>
-                <a id="misGifosLink" href="#misGifSection">Mis Guifos</a>
+                <a href="upload.html">
+                <button class="color_button button1">
+                    <div>
+                        Crear Guifos
+                    </div>
+                </button>
+                </a>
+                <button class="color_button button2 theme">
+                    <div>Elegir tema</div>
+                </button>
+                <button class="color_button button3 b3">
+                    <div>
+                        <img src="./assets/img/dropdown.svg" alt="img_dropdown">
+                    </div>
+                </button>
+                <p class="container-mis-gifos">
+                    <a id="misGifosLink" href="#misGifSection">Mis Guifos</a>
+                </p>
                 <!--nav_theme-->
                 <div id="themes" class="nav_theme">
                     <button class="button_1 SailorDay">Sailor Day</button>
@@ -44,8 +57,11 @@
                 <div class="container col-12">
                     <input class="col-2" type="text" id="value_search">
                     <button class="col-1" id="button_search">
-                        <img src="./assets/img/lupa_light.svg" alt="img_lupa">
-                        Buscar</button>
+                        <div class="button_search_div">
+                            <img id="lupa" src="./assets/img/lupa_inactive.svg" alt="img_lupa">
+                            Buscar
+                        </div>
+                    </button>
                 </div>
                 <div id="background_nav2" class="col-12 search_nav background_nav">
                     <button class="col-11" id="search_suggested">
@@ -82,7 +98,7 @@
         <!--container_gifs-->
         <div class="col-12 container container_gifs container_gifs2">
             <!--container_gif-->
-            <div class="col-3 container container_gif">
+            <!--<div class="col-3 container container_gif">
                 <div class="container body">
                     <img id="containerGifRandom" src="" alt="">
                     <div class="col-12 header">
@@ -91,35 +107,26 @@
                         </h2>
                     </div>
                 </div>
-            </div>
+            </div>-->
             <!--container_gif_1-->
         </div>
     </section>
-     <!--seccion de gif buscar-->
-     <section id="section3" class="container section_2">
+    <!--seccion de gif buscar-->
+    <section id="section3" class="container section_2">
         <!--title-->
         <div class="col-10 title">
             <h2 class="title_buscar">
+                #
             </h2>
         </div>
         <!--container_gifs-->
         <div id="containerGif3" class="col-12 container container_gifs container_gifs2">
-            <!--container_gif-->
-            <div class="col-3 container container_gif">
-                <div class="container body">
-                    <img id="containerGifRandom" src="" alt="">
-                    <div class="col-12 header">
-                        <h2 id="titleRandom">
-                            #
-                        </h2>
-                    </div>
-                </div>
-            </div>
+
         </div>
     </section>
 
-     <!--seccion mis Gifos-->
-     <section id="misGifSection" class="container section_2">
+    <!--seccion mis Gifos-->
+    <section id="misGifSection" class="container section_2">
         <!--title-->
         <div class="col-10 title">
             <h2 class="title_buscar">
@@ -133,14 +140,13 @@
     </section>
     <!--script-->
     <!--libreria  recordRTC-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/RecordRTC/5.5.8/RecordRTC.js" type="text/javascript"></script>
-    <!--------------------------------------------->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/RecordRTC/5.5.8/RecordRTC.js"></script>
     <script src="./assets/scripts/main.js"></script>
-    //<script src="./assets/scripts/video.js"></script>
     <script src="./assets/scripts/search.js"></script>
     <script src="./assets/scripts/today_suggest.js"></script>
     <script src="./assets/scripts/themes.js"></script>
     <script src="./assets/scripts/trends.js"></script>
-    
+
 </body>
+
 </html>
