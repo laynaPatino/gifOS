@@ -25,6 +25,11 @@ const sectionCreateGif = document.getElementById("sectionCreateGif");
 sectionCreateGif.style.display="none"
 const titleBox = document.querySelector(".title-box");
 
+//cancel
+function cancel(){
+  window.location.assign("index.html")
+};
+
 
 //successfulLoad.style.display="none"
 
@@ -124,6 +129,7 @@ function getStreamAndRecord() {
           document.querySelector(".upload_gif").style.display = "none";
           video2.style.display = "none";
           video.style.display = "block";
+          window.location.assign("upload.html");
         });
         //download gif
         document.querySelector(".download-button").addEventListener("click", function(){
@@ -242,6 +248,9 @@ function move() {
     }
   }
 }
+
+
+
 //llamado a funcion
 createGif();
 sectionMisGifos();

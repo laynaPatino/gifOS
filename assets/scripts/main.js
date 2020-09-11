@@ -49,6 +49,10 @@ document.getElementById("misGifosLink").addEventListener("click",function(){
 sectionMyGif.style.display="none"
 sectionMisGifos2();
 
+function uploadPag(){
+    window.location.assign("upload.html")
+}
+
 
 
 

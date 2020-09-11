@@ -73,7 +73,6 @@ function search() {
 
     //evento boton busqueda sugerida
     suggestedResult.addEventListener("click", function () {
-        document.querySelector(".button_search_div").style.border="1px dotted #110038"
         deletSearch();
         let suggested = suggestedResult.innerHTML;
         displayGif(suggested)

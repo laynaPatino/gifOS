@@ -23,21 +23,21 @@
                 <img src="./assets/img/gifOF_logo.png" alt="imagen_logo" id="logo_img">
             </a>
             <div class="button_container col-4">
-                <a href="upload.html">
-                <button class="color_button button1">
-                    <div>
+                <div class="border_button1 color_button">
+                    <button class=" button1" onclick="uploadPag()">
                         Crear Guifos
-                    </div>
-                </button>
-                </a>
-                <button class="color_button button2 theme">
-                    <div>Elegir tema</div>
-                </button>
-                <button class="color_button button3 b3">
-                    <div>
+                    </button>
+                </div>
+                <div class="color_button border_button2">
+                    <button class="button2 theme">
+                        Elegir tema
+                    </button>
+                </div>
+                <div class="color_button border_button3">
+                    <button class=" button3 b3">
                         <img src="./assets/img/dropdown.svg" alt="img_dropdown">
-                    </div>
-                </button>
+                    </button>
+                </div>
                 <p class="container-mis-gifos">
                     <a id="misGifosLink" href="#misGifSection">Mis Guifos</a>
                 </p>
@@ -57,18 +57,16 @@
                 <div class="container col-12">
                     <input class="col-2" type="text" id="value_search">
                     <button class="col-1" id="button_search">
-                        <div class="button_search_div">
                             <img id="lupa" src="./assets/img/lupa_inactive.svg" alt="img_lupa">
                             Buscar
-                        </div>
                     </button>
                 </div>
                 <div id="background_nav2" class="col-12 search_nav background_nav">
-                    <button class="col-11" id="search_suggested">
+                    <div class="col-11" id="search_suggested">
                         <div id="suggestedResult" class="col-12">
                             ejemplo
                         </div>
-                    </button>
+                    </div>
                     <button class="col-11" id="search_similar">resultado de búsqueda</button>
                     <button class="col-11" id="search_others">otro más</button>
                 </div>

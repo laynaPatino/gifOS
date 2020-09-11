@@ -33,7 +33,7 @@
             </h4>
             <div class="container col-12 body-create">
                 <div class="title col-12">
-                    <img src="./assets/img/window img.png" alt="">
+                    <img src="./assets/img/windowimg.png" alt="windowimg">
                     <h4>
                         Aquí podrás crear tus propios guifos
                     </h4>
@@ -53,9 +53,9 @@
                     <button id="start">
                         Comenzar
                     </button>
-                    <button id="cancel">
+                    <button id="cancel" onclick="cancel()">
                         <div>
-                            <a href="index.html">Cancelar</a>
+                            Cancelar
                         </div>
                     </button>
                 </div>
@@ -90,25 +90,25 @@
                 </div>
             </div>
             <div class="body_video col-12">
-                <video class="col-12" id="videoGif" src=""></video>
-                <img src="" alt="" id="videoGif2" class="col-12">
+                <video class="col-12" id="videoGif" src="#"></video>
+                <img src="#" alt="nuevo Gif" id="videoGif2" class="col-12">
             </div>
             <div class="body_capture col-12">
                 <button class="button_capture">
                     <div class="button_img">
                         <img src="./assets/img/camera.svg" alt="">
                     </div>
-                    <h5>
+                    <div>
                         Captura
-                    </h5>
+                    </div>
                 </button>
                 <button class="button_stop">
                     <div class="button_img">
                         <img src="./assets/img/recording.svg" alt="">
                     </div>
-                    <h5>
+                    <div>
                         listo
-                    </h5>
+                    </div>
                 </button>
                 <button class="upload_gif">
                     <div>
@@ -121,11 +121,12 @@
                     </div>
                 </button>
                 <button class="replay_gif">
-                    <a href="upload.html"> Repetir Captura</a>
+                     Repetir Captura
                 </button>
                 <!--timer-->
                 <div class="timer-input col-10">
                     <h3 class="timer-text">
+                        0:0:00
                     </h3>
                 </div>
             </div>
@@ -145,7 +146,7 @@
             <div class="container col-12 body-create">
                 <div class="col-7">
                     <div class="img_container" >
-                        <img id="last-gif" src="" alt="">
+                        <img id="last-gif" src="#" alt="nuevo gif">
                     </div>
                     </div>
                 <div class="col-5 container-info">
@@ -161,8 +162,8 @@
                         </button>
                     </div>
                     <div class="ready-button">
-                        <button>
-                            <a href="index.html"> Listo</a>
+                        <button onclick="cancel()">
+                             Listo
                         </button>
                     </div>
 
@@ -186,7 +187,6 @@
     </section>
     <!--script-->
     <!--libreria  recordRTC-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/RecordRTC/5.5.8/RecordRTC.js" type="text/javascript"></script>
-    <!--------------------------------------------->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/RecordRTC/5.5.8/RecordRTC.js"></script>
     <script src="./assets/scripts/video.js"></script>
 </body>
