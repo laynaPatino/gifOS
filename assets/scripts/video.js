@@ -1,6 +1,6 @@
-const url = "http://api.giphy.com/v1/gifs/";
+const url = "https://api.giphy.com/v1/gifs/";
 const apiKey = "r57WusYChcBWf2rW0XB14SeuLz7qNeJG";
-const urlUpload = "http://upload.giphy.com/v1/gifs?api_key=" + apiKey;
+const urlUpload = "https://upload.giphy.com/v1/gifs?api_key=" + apiKey;
 const video = document.querySelector("#videoGif");
 const containerVideo = document.querySelector(".container_video");
 containerVideo.style.display = "none";

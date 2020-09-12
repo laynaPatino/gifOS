@@ -1,4 +1,4 @@
-const url = "http://api.giphy.com/v1/gifs/"
+const url = "https://api.giphy.com/v1/gifs/"
 const apiKey = "r57WusYChcBWf2rW0XB14SeuLz7qNeJG";
 //Funciones para evento buscar gif
 var estado = document.querySelector(".search_nav").style.display = "none"//estado inicial de menu buscar
