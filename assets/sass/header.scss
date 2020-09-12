@@ -67,15 +67,15 @@ header {
       }
 
       .nav_theme {
-        width: 162px;
-        height: 102px;
-        margin-left: 176px;
-        padding: 10px;
-        position: absolute;
-        z-index: 1;
-        top: 115px;
-        background: #e6e6e6;
-        box-shadow: inset -2px -2px 0 0 #b4b4b4, inset 2px 2px 0 0 #ffffff;
+          width: 166px;
+          height: 102px;
+          margin-left: 178px;
+          padding: 10px;
+          position: absolute;
+          z-index: 1;
+          top: 116px;
+          background: #e6e6e6;
+          box-shadow: inset -2px -2px 0 0 #b4b4b4, inset 2px 2px 0 0 #ffffff;
         button {
           width: 144px;
           height: 36px;
@@ -248,6 +248,7 @@ header {
         box-shadow: inset -2px -2px 0 0 #284f99, inset 2px 2px 0 0 #ffffff;
       }
       #search_suggested {
+        margin-right: 8px;
         padding: 8px 7px;
         color: #ffffff;
         background: #4180f6;
