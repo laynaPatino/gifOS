@@ -50,9 +50,12 @@ function search() {
     document.getElementById("button_search")
         .addEventListener("click", function () {
             normalNav()
-            document.querySelector("#lupa").src = "./assets/img/lupa.svg";
-            document.getElementById("button_search").style.background="#F7C9F3";
-            document.getElementById("button_search").style.color="#110038";
+            if(document.querySelector(".dark_theme")){
+                document.querySelector("#lupa").src = "./assets/img/lupa_light.svg";
+            }else{
+                document.querySelector("#lupa").src = "./assets/img/lupa.svg";
+            }
+            document.getElementById("button_search").classList.add("background_search");
             let searchButton = document.getElementById("value_search");
             if (searchButton.value == "") {
                 alert("Tienes que ingresar algo que buscar")

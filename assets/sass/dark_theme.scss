@@ -2,6 +2,41 @@
     background-color: $body_night_color;
     //header dark theme
     header{
+        .head{
+            .button_container{
+                .container-mis-gifos{
+                    a{
+                        color: #FFF;
+                    }
+                    &:hover{
+                        border: 1px dotted #fff;
+                    }
+                }
+                .nav_theme {
+                    background: #B4B4B4;
+                    box-shadow: inset -2px -2px 0 0 #8F8F8F, inset 2px 2px 0 0 #FFFFFF;
+                    .button_1{
+                        background: #CCCCCC;
+                        border: 1px solid #808080;
+                        box-shadow: inset -1px -1px 0 0 #B4B4B4, inset 1px 1px 0 0 #FFFFFF;
+                        color: #110038;
+                        &::first-letter {
+                            text-decoration: none;
+                          }
+                    }
+                    .button_2{
+                        background: #2E32FB;
+                        border: 1px solid rgba(51,53,143,0.20);
+                        box-shadow: inset -1px -1px 0 0 #E6DCE4, inset 1px 1px 0 0 #FFFFFF;
+                        color: #FFFFFF;
+                        &::first-letter {
+                            text-decoration: underline;
+                          }
+                    }
+                }
+
+            }
+        }
         .header{
             background-image: linear-gradient(270deg, $night_color1 0%, $night_color2 100%);
             box-shadow: 0 1px 0 0 $border_color;
@@ -13,6 +48,9 @@
                     border: 1px solid $border_color;
                     box-shadow: inset -1px -1px 0 0 $night_color3, inset 1px 1px 0 0 $night_color_text;
                     color:$night_color_text;
+                    button{
+                        color: #FFFFFF;
+                    }
                 }
     
                 a{
@@ -21,8 +59,6 @@
             }
         }
 
-
-    
         .container{
             nav{
                 background: $night_color4;
@@ -38,8 +74,13 @@
                         box-shadow: inset -1px -1px 0 0 $night_color4, inset 1px 1px 0 0 #FFFFFF;
                         color:$night_color5;
                     }
+                    .background_search{
+                        background: #EE3EFE;
+                        border: 1px solid #110038;
+                        box-shadow: inset -1px -1px 0 0 #A72CB3, inset 1px 1px 0 0 #FFFFFF;
+                        color: #FFFFFF;
+                      }
                 }
-                //corregir colores para dark
                 .search_nav{
                     background: #B4B4B4;
                     box-shadow: inset -2px -2px 0 0 $night_color5, inset 2px 2px 0 0 $night_color_text;
@@ -141,10 +182,5 @@
             }
         }
     }
-    
-    
-    
-    
-
 }
 
