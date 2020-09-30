@@ -44,6 +44,7 @@ document.getElementById("misGifosLink").addEventListener("click",function(){
     document.querySelector(".section_search").style.display = "none"
     document.querySelector(".section_1").style.display = "none"
     document.querySelector(".section_2").style.display = "none"
+    document.querySelector("#section3").style.display = "none"
     sectionMyGif.style.display="flex"
 })
 sectionMyGif.style.display="none"

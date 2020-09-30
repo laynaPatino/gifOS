@@ -30,7 +30,6 @@ function cancel(){
   window.location.assign("index.html")
 };
 
-
 //successfulLoad.style.display="none"
 
 console.log(localStorage.getItem("id"))
@@ -186,7 +185,7 @@ function sectionMisGifos() {
       });
   }
 }
-
+//crear gif
 function createGif() {
   document.querySelector("#start").addEventListener("click", function () {
     containerVideo.style.display = "flex";
@@ -198,11 +197,8 @@ function createGif() {
 }
 
 //timer
-
 var Time;
 function timer() {
-  DivTimer = document.querySelector(".timer-size");
-
   Time = setInterval(TimeElapsed, 1000);
   var hour = 0;
   var min = 0;

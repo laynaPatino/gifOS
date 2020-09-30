@@ -154,9 +154,9 @@ header {
       }
       .container {
         padding: 0px;
+        flex-wrap: nowrap;
         input {
           height: 48px;
-          width: 1057px;
           margin: 12px 8px 12px 15px;
           font-size: 16px;
           color: $day_color4;
@@ -172,6 +172,7 @@ header {
           width: 102px;
           height: 36px;
           margin-top: 18px;
+          margin-right: 12px;
           background: #e6e6e6;
           border: 1px solid #808080;
           box-shadow: inset -1px -1px 0 0 $day_color4,

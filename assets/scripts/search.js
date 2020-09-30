@@ -41,7 +41,7 @@ const deletSearch = function () {
     const sectionGifs = document.querySelector("#containerGif3");
     sectionGifs.innerHTML = "";
 }
-
+let serch_value = ""
 //funcion evento click boton buscar
 function search() {
     const suggestedResult = document.getElementById("suggestedResult");
@@ -49,24 +49,30 @@ function search() {
     const searchOthers = document.getElementById("search_others");
     document.getElementById("button_search")
         .addEventListener("click", function () {
+            document.querySelector(".search_nav").style.display = "inline";
+            let searchButton = document.getElementById("value_search");
+            if(serch_value != searchButton.value){
+                normalNav()
+            }
+            serch_value = searchButton.value;
             normalNav()
-            if(document.querySelector(".dark_theme")){
+            if (document.querySelector(".dark_theme")) {
                 document.querySelector("#lupa").src = "./assets/img/lupa_light.svg";
-            }else{
+            } else {
                 document.querySelector("#lupa").src = "./assets/img/lupa.svg";
             }
             document.getElementById("button_search").classList.add("background_search");
-            let searchButton = document.getElementById("value_search");
             if (searchButton.value == "") {
                 alert("Tienes que ingresar algo que buscar")
-            } else {
+            } 
+            else {
                 //despliegue de menu buscar
-                var estado = document.querySelector(".search_nav").style.display
-                if (estado == "none") {
-                    document.querySelector(".search_nav").style.display = "inline";
-                } else {
-                    document.querySelector(".search_nav").style.display = "none";
-                };
+               // var estado = document.querySelector(".search_nav").style.display
+                //if (estado == "none") {
+               //     document.querySelector(".search_nav").style.display = "inline";
+                //} else {
+                 //   document.querySelector(".search_nav").style.display = "none";
+               // };
                 //botones menu buscar
                 suggestedResult.innerHTML = searchButton.value;
                 searchSimilar.innerHTML = "similar a " + searchButton.value;
@@ -95,10 +101,11 @@ function search() {
     searchOthers.addEventListener("click", function () {
         deletSearch();
         let suggested = suggestedResult.innerHTML;
-        let others = "memes de " + suggested
+        let others = "peliculas " + suggested
         let title = "Otros"
         displayGif(title)
         getSearchResults(others);
+        console.log(others)
     });
     //interaccion con el resto de la pagina
 
@@ -131,12 +138,6 @@ function search() {
     }
 
 };
-
-
-
-
-
-
 
 
 //llamado de funcion
